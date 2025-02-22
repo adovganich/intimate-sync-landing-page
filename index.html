@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            gap: 10px;
+        }
+        input[type="email"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Intimate Sync</h1>
+    <p>Coming Soon</p>
+    <form action="https://formspree.io/f/xbldbdqd" method="POST">
+        <input type="email" name="email" placeholder="Email" required>
+        <button type="submit">Get Notified →</button>
+    </form>
+</div>
+</body>
+</html>
