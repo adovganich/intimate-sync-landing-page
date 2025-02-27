@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intimate Sync - Beta Testing</title>
+    <link rel="icon" type="image/ico" href="favicon.ico">
     <style>
         * {
             box-sizing: border-box;
@@ -16,12 +17,20 @@
             text-align: center;
         }
         .header {
-            background: #0277BD;
+            background: linear-gradient(45deg, #0277BD, #D26863, #0277BD);
+            background-size: 400% 400%;
+            animation: gradientMove 6s infinite alternate;
             padding: 20px;
-            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .header img {
             height: 60px;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
         }
         .content {
             max-width: 800px;
@@ -56,6 +65,9 @@
             padding: 15px;
             border-radius: 10px;
             margin: 20px 0;
+        }
+        .cta p {
+            font-size: 16px;
         }
         form {
             display: flex;
@@ -96,17 +108,17 @@
 
     <div class="screenshots">
         <img src="screenshot1.jpg" alt="Screenshot 1">
-        <img src="screenshot2.jpg" alt="Screenshot 2">
+        <img src="screenshot2_1.jpg" alt="Screenshot 2">
         <img src="screenshot3.jpg" alt="Screenshot 3">
     </div>
 
     <div class="cta">
-        <p>Leave your **Google Play registered email** below to join our beta program.</p>
-        <p>Once beta testing starts, we’ll send you a link to download the app.</p>
+        <p>Sign up with your <b>Google Play account email</b> to join our beta program.</p>
+        <p>Once beta testing starts, we’ll send you an invitation to download the app.</p>
     </div>
 
     <form action="https://formspree.io/f/xbldbdqd" method="POST">
-        <input type="email" name="email" placeholder="Enter your Google Play email" required>
+        <input type="email" name="email" placeholder="Enter your Google Play account email" required>
         <button type="submit">Join Beta</button>
     </form>
 </div>
