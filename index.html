@@ -3,66 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Intimate Sync - Beta Testing</title>
     <style>
         * {
             box-sizing: border-box;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         body {
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: url('background.jpg') no-repeat center center/cover;
-        }
-        .container {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
+            background: #f4f4f4;
             text-align: center;
-            width: 90%;
-            max-width: 600px;
+        }
+        .header {
+            background: #0277BD;
+            padding: 20px;
+            color: white;
+        }
+        .header img {
+            height: 60px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            color: #0277BD;
         }
         p {
-            color: #bbb;
-            margin-bottom: 20px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .screenshots img {
+            width: 30%;
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .cta {
+            background: #D26863;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
         }
         form {
             display: flex;
+            justify-content: center;
             gap: 10px;
+            margin-top: 15px;
         }
         input[type="email"] {
-            flex: 1;
             padding: 10px;
-            border: none;
+            border: 1px solid #ccc;
             border-radius: 5px;
+            width: 250px;
             font-size: 16px;
         }
         button {
-            background: white;
+            background: #0277BD;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
             border-radius: 5px;
+            color: white;
             font-weight: bold;
+        }
+        button:hover {
+            background: #025f9c;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Intimate Sync</h1>
-    <p>Coming Soon</p>
+
+<div class="header">
+    <img src="logo.png" alt="Intimate Sync Logo">
+</div>
+
+<div class="content">
+    <h1>Join the Intimate Sync Beta Test</h1>
+    <p>Experience the next level of connection with your partner. Be the first to try Intimate Sync and help us improve!</p>
+
+    <div class="screenshots">
+        <img src="screenshot1.jpg" alt="Screenshot 1">
+        <img src="screenshot2.jpg" alt="Screenshot 2">
+        <img src="screenshot3.jpg" alt="Screenshot 3">
+    </div>
+
+    <div class="cta">
+        <p>Leave your **Google Play registered email** below to join our beta program.</p>
+        <p>Once beta testing starts, we’ll send you a link to download the app.</p>
+    </div>
+
     <form action="https://formspree.io/f/xbldbdqd" method="POST">
-        <input type="email" name="email" placeholder="Email" required>
-        <button type="submit">Get Notified →</button>
+        <input type="email" name="email" placeholder="Enter your Google Play email" required>
+        <button type="submit">Join Beta</button>
     </form>
 </div>
+
 </body>
 </html>
