@@ -47,6 +47,29 @@
             color: #333;
             margin: 10px 0;
         }
+        .description {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.6;
+            padding: 10px;
+        }
+        .description p {
+            text-indent: 1.5em;
+            margin-bottom: 1em;
+        }
+        @media (max-width: 600px) {
+            .description {
+                font-size: 0.95rem;
+            }
+        }
+        .highlight {
+            font-weight: bold;
+            color: #D26863;
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 20px;
+            text-indent: 0;
+        }
         .screenshots {
             display: flex;
             justify-content: center;
@@ -85,7 +108,19 @@
 
 <div class="content">
     <h1>Intimate Sync</h1>
-    <p>Experience a deeper connection with your partner. Intimate Sync is now available on Google Play!</p>
+    <div class="description">
+        <p>
+            Suggesting sex can feel awkward — even in a loving relationship. Feel unsure if your partner was in the mood? Maybe you think they were tired or not interested that day? So, you stayed silent, only to find out later they were feeling the same way?
+        </p>
+        <p>
+            <strong>Intimate Sync</strong> was built to avoid moments like these. You open the app and simply tap a button when you're ready. Your partner does the same on their device. When both of you tap “ready,” you both get a gentle notification — no awkward guessing. The app is completely free and does not collect or transmit any user data.
+        </p>
+        <p class="highlight">
+            ❤️ Now available on <strong>Google Play</strong>!
+        </p>
+    </div>
+
+
 
     <div class="screenshots">
         <img src="screenshot3_new.jpg" alt="Screenshot 3">
